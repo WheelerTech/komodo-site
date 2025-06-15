@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="komodo2.ico" alt="Komodo Logo" />
+      <span>Komodo</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero" class="hero">
     <img src="komodo2.ico" alt="Komodo Logo" class="logo" />
     <h1>Recruiting, upgraded.</h1>
     <p class="subhead">Modern tools for modern teams.</p>
@@ -18,7 +29,7 @@
   </header>
 
   <main>
-    <section>
+    <section id="services">
       <h2>AI-assisted hiring for high-growth startups</h2>
       <p>We help lean teams move fast with GPT-powered workflows — from first touch to final offer.</p>
     </section>
@@ -40,13 +51,13 @@
       <p>Simple onboarding → prompt library → workflow automation → launch.</p>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Built for startup operators and recruiters</h2>
       <p>Ideal for Seed to Series C teams scaling fast without hiring a large recruiting org.</p>
     </section>
 
     <div id="cta" class="cta-footer">
-      <a class="cta-button" href="#">See It in Action</a>
+      <a class="cta-button" href="#contact">See It in Action</a>
     </div>
   </main>
 
