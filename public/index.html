@@ -4,64 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Komodo Recruiting</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="komodo2.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="nav-logo">
-      <img src="komodo2.ico" alt="Komodo Logo" />
-      <span>Komodo</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<body class="bg-white text-gray-800 font-sans">
 
-  <header id="hero" class="hero">
-    <img src="komodo2.ico" alt="Komodo Logo" class="logo" />
-    <h1>Recruiting, upgraded.</h1>
-    <p class="subhead">Modern tools for modern teams.</p>
-    <a href="#cta" class="cta-button">See It in Action</a>
+  <!-- Header with smaller grayscale logo -->
+  <header class="flex items-center justify-between px-6 py-4 bg-white shadow">
+    <div class="flex items-center space-x-2">
+      <img src="komodo2.png" alt="Komodo logo" class="w-12 h-12 filter grayscale" />
+      <span class="text-xl font-semibold text-gray-900">Komodo</span>
+    </div>
+    <nav class="space-x-6 text-gray-700 font-medium">
+      <a href="#services" class="hover:underline">Services</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="services">
-      <h2>AI-assisted hiring for high-growth startups</h2>
-      <p>We help lean teams move fast with GPT-powered workflows — from first touch to final offer.</p>
-    </section>
-
-    <section>
-      <h2>What you get</h2>
-      <ul>
-        <li>✨ GPT-powered outreach builder</li>
-        <li>🧠 Resume summarizer + screening assist</li>
-        <li>📊 Real-time pipeline insights</li>
-        <li>🤖 Slack/Notion integrations</li>
-        <li>🧩 Prompt library tailored to your roles</li>
-        <li>👥 Embedded Recruiting Experts</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>From 0 to 1: recruiting workflows powered by GPT</h2>
-      <p>Simple onboarding → prompt library → workflow automation → launch.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Built for startup operators and recruiters</h2>
-      <p>Ideal for Seed to Series C teams scaling fast without hiring a large recruiting org.</p>
-    </section>
-
-    <div id="cta" class="cta-footer">
-      <a class="cta-button" href="#contact">See It in Action</a>
-    </div>
+  <!-- Main content placeholder -->
+  <main class="text-center py-20 px-6">
+    <h1 class="text-4xl font-bold mb-4">Recruiting, upgraded.</h1>
+    <p class="text-lg text-gray-600">AI-assisted hiring for high-growth startups</p>
   </main>
 
-  <footer>
+  <footer class="text-center p-6 text-sm text-gray-500">
     &copy; 2025 Komodo Recruiting
   </footer>
 </body>
