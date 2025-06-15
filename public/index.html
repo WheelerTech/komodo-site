@@ -6,13 +6,13 @@
   <title>Komodo Recruiting</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-900 font-sans">
 
-  <!-- Header with smaller grayscale logo -->
-  <header class="flex items-center justify-between px-6 py-4 bg-white shadow">
-    <div class="flex items-center space-x-2">
-      <img src="komodo2.png" alt="Komodo logo" class="w-12 h-12 filter grayscale" />
-      <span class="text-xl font-semibold text-gray-900">Komodo</span>
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 shadow">
+    <div class="flex items-center space-x-3">
+      <img src="komodo-logo.png" alt="Komodo logo" class="w-12 h-12 filter grayscale" />
+      <span class="text-xl font-bold">Komodo</span>
     </div>
     <nav class="space-x-6 text-gray-700 font-medium">
       <a href="#services" class="hover:underline">Services</a>
@@ -20,14 +20,64 @@
     </nav>
   </header>
 
-  <!-- Main content placeholder -->
-  <main class="text-center py-20 px-6">
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6">
     <h1 class="text-4xl font-bold mb-4">Recruiting, upgraded.</h1>
-    <p class="text-lg text-gray-600">AI-assisted hiring for high-growth startups</p>
-  </main>
+    <p class="text-xl text-gray-700 mb-6">Technical + AI-assisted hiring for high-growth startups — from founding engineers to final offer.</p>
+    <a href="#contact" class="inline-block px-6 py-3 bg-black text-white rounded hover:bg-gray-800">See It in Action</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-8 text-center">What We Do</h2>
+      <p class="text-gray-700 text-center mb-12">
+        We partner with Series A–C startups to deliver high-impact technical recruiting — now supercharged with GPT-powered tools.
+      </p>
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div>
+          <h3 class="font-semibold text-lg">✅ Series A–C Focus</h3>
+          <p class="text-gray-600 mb-4">Deep experience with early-stage teams, from seed-funded startups to Series C growth companies.</p>
+
+          <h3 class="font-semibold text-lg">✅ Founding & Core Engineering Hires</h3>
+          <p class="text-gray-600 mb-4">We help you find builders who thrive in ambiguity, take ownership, and ship fast.</p>
+
+          <h3 class="font-semibold text-lg">✅ AI-Powered Outreach Builder</h3>
+          <p class="text-gray-600 mb-4">Boost response rates with intelligent, persona-tailored outreach crafted by LLMs.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">✅ Resume Summarizer + Screening Assist</h3>
+          <p class="text-gray-600 mb-4">Save hours with automated resume parsing and GPT-powered fit summaries.</p>
+
+          <h3 class="font-semibold text-lg">✅ Real-Time Pipeline Insights</h3>
+          <p class="text-gray-600 mb-4">Track search progress via Slack, Notion, or Airtable.</p>
+
+          <h3 class="font-semibold text-lg">✅ Prompt Library Tailored to Your Roles</h3>
+          <p class="text-gray-600 mb-4">Reuse what works — or let us build your next playbook.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">Ready to hire smarter?</h2>
+      <p class="mb-6 text-gray-700">Whether you’re hiring your first engineer or scaling to 20+, we can help.</p>
+      <p class="mb-2">📧 <a href="mailto:wheeler@komodorecruiting.com" class="text-blue-600 hover:underline">wheeler@komodorecruiting.com</a></p>
+      <p class="mb-6">🔗 <a href="https://linkedin.com/in/seandavidwheeler" class="text-blue-600 hover:underline" target="_blank">Sean Wheeler on LinkedIn</a></p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Name" required class="w-full p-3 border rounded" />
+        <input type="email" name="email" placeholder="Email" required class="w-full p-3 border rounded" />
+        <textarea name="message" placeholder="Message" required class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800">Send</button>
+      </form>
+    </div>
+  </section>
 
   <footer class="text-center p-6 text-sm text-gray-500">
     &copy; 2025 Komodo Recruiting
   </footer>
+
 </body>
 </html>
